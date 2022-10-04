@@ -1,0 +1,62 @@
+/* Write your code here. */
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sub-container {
+  display: flex;
+}
+.small-box {
+  background-color: #fbbf24;
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  align-self: flex-end;
+  border-width: 0px;
+}
+.medium-box {
+  background-color: #38bdf8;
+  height: 150px;
+  width: 150px;
+  margin-right: 10px;
+  align-self: flex-end;
+  border-width: 0px;
+}
+.high-box {
+  background-color: #ec4899;
+  height: 250px;
+  width: 250px;
+  align-self: flex-end;
+  border-width: 0px;
+}
+@media (max-width: 576px) {
+  .small-box {
+    height: 70px;
+    max-height: 100px;
+  }
+  .medium-box {
+    height: 120px;
+    max-height: 150px;
+  }
+  .high-box {
+    height: 170px;
+    max-height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .small-box {
+    height: 100px;
+    max-height: 150px;
+  }
+  .medium-box {
+    height: 150px;
+    max-height: 200px;
+  }
+  .high-box {
+    height: 200px;
+    max-height: 300px;
+  }
+}
